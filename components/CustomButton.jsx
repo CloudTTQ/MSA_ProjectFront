@@ -12,7 +12,7 @@ const CustomButton = ({ title, primary, handlePress, containerStyles, textStyles
           ${isLoading ? "opacity-50" : ""}`}
       disabled={isLoading}
     >
-      <Text className={`${primary ? "text-primary-white" : "text-secondary"} font-psemibold text-xl ${textStyles}`}>{title}</Text>
+      <Text className={`${primary ? "text-primary-white" : "text-secondary"} font-psemibold ${textStyles}`}>{title}</Text>
     </TouchableOpacity>
   );
 };
