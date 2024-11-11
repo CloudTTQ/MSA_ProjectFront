@@ -32,22 +32,10 @@ const _layout = () => {
   return (
     <GlobalProvider>
       <Stack>
-        <Stack.Screen
-          name="index"
-          options={{ headerShown: false }}
-        ></Stack.Screen>
-        <Stack.Screen
-          name="(auth)"
-          options={{ headerShown: false }}
-        ></Stack.Screen>
-        <Stack.Screen
-          name="(tabs_pacient)"
-          options={{ headerShown: false }}
-        ></Stack.Screen>
-        <Stack.Screen
-          name="(tabs_doctor)"
-          options={{ headerShown: false }}
-        ></Stack.Screen>
+        <Stack.Screen name="index" options={{ headerShown: false }}></Stack.Screen>
+        <Stack.Screen name="(auth)" options={{ headerShown: false }}></Stack.Screen>
+        <Stack.Screen name="(tabs_pacient)" options={{ headerShown: false }}></Stack.Screen>
+        <Stack.Screen name="(tabs_doctor)" options={{ headerShown: false }}></Stack.Screen>
       </Stack>
       <StatusBar backgroundColor="#F7F7F7" style="dark" />
     </GlobalProvider>

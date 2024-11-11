@@ -59,13 +59,7 @@ const sign_in_doctor = () => {
             otherStyles="mt-7"
           />
 
-          <CustomButton
-            title="Sign in"
-            primary={true}
-            handlePress={Submit}
-            containerStyles={"mt-7"}
-            isLoading={isSubmitting}
-          />
+          <CustomButton title="Sign in" primary={true} handlePress={Submit} containerStyles={"mt-7"} isLoading={isSubmitting} />
         </View>
       </ScrollView>
       <StatusBar style="light" />

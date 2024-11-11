@@ -8,20 +8,10 @@ import { icons } from "../../constants";
 const TabIcon = ({ icon, color, name, focused }) => {
   return (
     <View className="flex-row">
-      <Text
-        className={`${
-          focused ? "font-psemibold" : "font-pregular"
-        } text-3xl px-5`}
-        style={{ color: color }}
-      >
+      <Text className={`${focused ? "font-psemibold" : "font-pregular"} text-3xl px-5`} style={{ color: color }}>
         {name}
       </Text>
-      <Image
-        source={icon}
-        resizeMode="contain"
-        tintColor={color}
-        className="w-7 h-7"
-      />
+      <Image source={icon} resizeMode="contain" tintColor={color} className="w-7 h-7" />
     </View>
   );
 };
@@ -47,14 +37,7 @@ const TabsDoctorLayout = () => {
           options={{
             title: "home",
             headerShown: false,
-            tabBarIcon: ({ color, focused }) => (
-              <TabIcon
-                icon={icons.home}
-                color={color}
-                name="Acasa"
-                focused={focused}
-              />
-            ),
+            tabBarIcon: ({ color, focused }) => <TabIcon icon={icons.home} color={color} name="Acasa" focused={focused} />,
           }}
         />
       </Tabs>

@@ -7,9 +7,7 @@ const index = () => {
   return (
     <SafeAreaView className="bg-primary-red h-full">
       <View className="flex-1 justify-center items-center px-4 pt-30 w-full">
-        <Text className="font-bold text-6xl text-primary-white mb-10">
-          Cine esti?
-        </Text>
+        <Text className="font-bold text-6xl text-primary-white mb-10">Cine esti?</Text>
 
         <CustomButton
           title="Doctor"
