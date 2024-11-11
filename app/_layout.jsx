@@ -41,7 +41,7 @@ const _layout = () => {
           options={{ headerShown: false }}
         ></Stack.Screen>
         <Stack.Screen
-          name="(tabs)"
+          name="(tabs_pacient)"
           options={{ headerShown: false }}
         ></Stack.Screen>
         <Stack.Screen
