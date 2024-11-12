@@ -41,10 +41,11 @@ const TabsDoctorLayout = () => {
           }}
         />
       </Tabs>
-
       <StatusBar backgroundColor="#F7F7F7" style="dark" />
     </>
   );
 };
+
+// CHANGE THIS ASAP. IT IS NOT GONNA WORK. USE STACK SCREEN AND MAKE A BUTTON AT THE BOTTOM OR TO THE RIGHT. WE NEED TO CHANGE DESIGN.
 
 export default TabsDoctorLayout;

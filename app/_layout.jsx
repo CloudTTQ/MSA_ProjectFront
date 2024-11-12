@@ -34,8 +34,9 @@ const _layout = () => {
       <Stack>
         <Stack.Screen name="index" options={{ headerShown: false }}></Stack.Screen>
         <Stack.Screen name="(auth)" options={{ headerShown: false }}></Stack.Screen>
-        <Stack.Screen name="(tabs_pacient)" options={{ headerShown: false }}></Stack.Screen>
         <Stack.Screen name="(tabs_doctor)" options={{ headerShown: false }}></Stack.Screen>
+        <Stack.Screen name="(tabs_pacient)" options={{ headerShown: false }}></Stack.Screen>
+        <Stack.Screen name="profile_page/[profileId]" options={{ headerShown: false }}></Stack.Screen>
       </Stack>
       <StatusBar backgroundColor="#F7F7F7" style="dark" />
     </GlobalProvider>
