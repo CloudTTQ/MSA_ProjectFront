@@ -5,8 +5,7 @@ import ProfilePopup from "../../components/ProfilePopup";
 
 import { getPacients, getUsers } from "../../lib/database";
 import { router } from "expo-router";
-import { icons } from "../../constants";
-import { TouchableOpacity } from "react-native";
+import HomeButton from "../../components/HomeButton";
 
 const ProfileTabs = ({ list }) => {
   return (
@@ -14,7 +13,7 @@ const ProfileTabs = ({ list }) => {
       {list.map((profile, index) => (
         <ProfilePopup
           key={index}
-          name={profile.name}
+          name={profile.fullName}
           icon={profile.icon}
           isOnline={profile.isOnline}
           unreadMessages={profile.unreadMessages}
@@ -38,6 +37,7 @@ const home = () => {
           <ProfileTabs list={profileList} />
         </View>
       </ScrollView>
+      <HomeButton />
     </SafeAreaView>
   );
 };

@@ -1,51 +1,16 @@
-import { View, Text, Image } from "react-native";
-import React from "react";
-import { Tabs } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { Stack } from "expo-router";
 
-import { icons } from "../../constants";
-
-const TabIcon = ({ icon, color, name, focused }) => {
-  return (
-    <View className="flex-row">
-      <Text className={`${focused ? "font-psemibold" : "font-pregular"} text-3xl px-5`} style={{ color: color }}>
-        {name}
-      </Text>
-      <Image source={icon} resizeMode="contain" tintColor={color} className="w-7 h-7" />
-    </View>
-  );
-};
-
-const TabsDoctorLayout = () => {
+const tabs_doctor = () => {
   return (
     <>
-      <Tabs
-        screenOptions={{
-          tabBarShowLabel: false,
-          tabBarActiveTintColor: "#E00028",
-          tabBarInactiveTintColor: "#2E333C",
-          tabBarStyle: {
-            backgroundColor: "#F7F7F7",
-            borderTopWidth: 1,
-            borderTopColor: "#2E333C",
-            height: 84,
-          },
-        }}
-      >
-        <Tabs.Screen
-          name="home_doctor"
-          options={{
-            title: "home",
-            headerShown: false,
-            tabBarIcon: ({ color, focused }) => <TabIcon icon={icons.home} color={color} name="Acasa" focused={focused} />,
-          }}
-        />
-      </Tabs>
+      <Stack>
+        <Stack.Screen name="home_doctor" options={{ headerShown: false }} />
+      </Stack>
       <StatusBar backgroundColor="#F7F7F7" style="dark" />
     </>
   );
 };
 
-// CHANGE THIS ASAP. IT IS NOT GONNA WORK. USE STACK SCREEN AND MAKE A BUTTON AT THE BOTTOM OR TO THE RIGHT. WE NEED TO CHANGE DESIGN.
-
-export default TabsDoctorLayout;
+export default tabs_doctor;
