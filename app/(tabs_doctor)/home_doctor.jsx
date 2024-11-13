@@ -31,9 +31,9 @@ const home = () => {
   const profileList = getPacients();
   return (
     <SafeAreaView className="bg-primary-white h-full">
+      <Text className="text-secondary px-4 font-pbold text-3xl">Pacienti: {profileList.length}</Text>
       <ScrollView>
         <View className="px-4 pt-4">
-          <Text className="text-secondary font-pbold text-3xl">Pacienti:</Text>
           <ProfileTabs list={profileList} />
         </View>
       </ScrollView>
