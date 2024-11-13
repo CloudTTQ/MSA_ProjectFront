@@ -29,7 +29,7 @@ const ProfileTabs = ({ list }) => {
 };
 
 const home = () => {
-  const profileList = getUsers();
+  const profileList = getPacients();
   return (
     <SafeAreaView className="bg-primary-white h-full">
       <ScrollView>
