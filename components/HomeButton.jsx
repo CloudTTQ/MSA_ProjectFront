@@ -15,8 +15,8 @@ const HomeButton = ({ isPacient }) => {
       onPress={() =>
         isOnHomePage !== "home_doctor" && isOnHomePage !== "home_pacient"
           ? isPacient
-            ? router.replace("/home_pacient")
-            : router.replace("/home_doctor")
+            ? router.navigate("/home_pacient")
+            : router.navigate("/home_doctor")
           : ""
       }
     >
