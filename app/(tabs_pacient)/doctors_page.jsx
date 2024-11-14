@@ -3,10 +3,9 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import ProfilePopup from "../../components/ProfilePopup";
 
-import { getPacients, getUsers } from "../../lib/database";
+import { getDoctors, getPacients, getUsers } from "../../lib/database";
 import { router } from "expo-router";
 import HomeButton from "../../components/HomeButton";
-import LogOutButton from "../../components/LogOutButton";
 
 const ProfileTabs = ({ list }) => {
   return (
@@ -28,24 +27,19 @@ const ProfileTabs = ({ list }) => {
   );
 };
 
-const home = () => {
-  const profileList = getPacients();
+const doctors_page = () => {
+  const profileList = getDoctors();
   return (
     <SafeAreaView className="bg-primary-white h-full">
-      <View className="flex-row items-center justify-between">
-        <Text className="text-secondary px-4 font-pbold text-3xl">Pacienti: {profileList.length}</Text>
-        <View className="flex-row">
-          <LogOutButton />
-        </View>
-      </View>
+      <Text className="text-secondary px-4 font-pbold text-3xl">Doctori: {profileList.length}</Text>
       <ScrollView>
         <View className="px-4 pt-4">
           <ProfileTabs list={profileList} />
         </View>
       </ScrollView>
-      <HomeButton />
+      <HomeButton isPacient={true} />
     </SafeAreaView>
   );
 };
 
-export default home;
+export default doctors_page;

@@ -13,7 +13,7 @@ const index = () => {
           title="Doctor"
           primary={false}
           handlePress={() => {
-            router.push("/sign_in_doctor");
+            router.replace("/sign_in_doctor");
           }}
           containerStyles="w-full mt-7 h-[200px]"
           textStyles="text-4xl"
@@ -22,7 +22,7 @@ const index = () => {
           title="Pacient"
           primary={false}
           handlePress={() => {
-            router.push("/sign_in_pacient");
+            router.replace("/sign_in_pacient");
           }}
           containerStyles="w-full mt-7 h-[200px]"
           textStyles="text-4xl"

@@ -8,6 +8,7 @@ const tabs_pacient = () => {
       <Stack>
         <Stack.Screen name="home_pacient" options={{ headerShown: false }} />
         <Stack.Screen name="medication_page" options={{ headerShown: false }} />
+        <Stack.Screen name="doctors_page" options={{ headerShown: false }} />
       </Stack>
       <StatusBar backgroundColor="#F7F7F7" style="dark" />
     </>
